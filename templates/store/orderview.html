@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    body {
+  font-family: "Noto Sans";
+  color: #050505;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #fbab7e;
+  background-image: linear-gradient(
+    45deg,
+    #fbab7e 0%,
+    #f7ce68 50%,
+    #fbe4b2 100%
+  );
+  overflow: hidden;
+}
+
+.list-wrapper {
+  position: relative;
+  width: 400px;
+  padding: 3rem 4rem;
+  border-radius: 5px;
+}
+
+h1 {
+  text-align: left;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.styled-list {
+  list-style-position: inside;
+  position: relative;
+  width: 320px;
+  padding: 1.2rem;
+  line-height: 1.5rem;
+  background: white;
+  border-radius: 5px;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+li {
+  position: relative;
+  list-style: none;
+}
+
+label {
+  cursor: pointer;
+}
+
+label:hover {
+  text-decoration: line-through;
+  color: #a9a9a9;
+}
+
+input:checked ~ span {
+  text-decoration: line-through;
+  color: #ccc;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  margin: 0;
+}
+  </style>
+</head>
+<body>
+<div class="list-wrapper">
+  <ul class="styled-list">
+    <h1>Todo</h1>
+    <hr>
+    <li>
+      <label>
+        <input type="checkbox" name="checkbox">
+        <span>Groceries</span>
+      </label>
+      <ul>
+        <li>
+          <label>
+            <input type="checkbox" name="checkbox">
+            <span>3 Tomatoes</span>
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="checkbox" name="checkbox">
+            <span>1 bunch of cherries</span>
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="checkbox" name="checkbox">
+            <span>6 onions</span>
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="checkbox" name="checkbox">
+            <span>3 heads of garlic</span>
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="checkbox" name="checkbox">
+            <span>1 bag spring mix</span>
+          </label>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <label>
+        <input type="checkbox" name="checkbox">
+        <span>Cancel gym membership</span>
+      </label>
+    </li>
+    <li>
+      <label>
+        <input type="checkbox" name="checkbox">
+        <span>Clean gutters</span>
+      </label>
+    </li>
+    <li>
+      <label>
+        <input type="checkbox" name="checkbox">
+        <span>Take package to the post office</span>
+      </label>
+    </li>
+    <li>
+      <label>
+        <input type="checkbox" name="checkbox">
+        <span>Call Avery about Ali's party (afternoon)</span>
+      </label>
+    </li>
+    <li>
+      <label>
+        <input type="checkbox" name="checkbox">
+        <span>Sort recycling & put out trash</span>
+      </label>
+    </li>
+  </ul>
+</div>
+</body>
+</html>
